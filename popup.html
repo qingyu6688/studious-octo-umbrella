@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>网页内容爬取器</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>网页内容爬取器</h1>
+  <button id="crawl">开始爬取</button>
+  <div id="result">
+    <div class="section">
+      <h3>图片 (<span id="image-count">0</span>):</h3>
+      <button id="download-all-images" class="download-all">下载所有图片</button>
+      <div id="images"></div>
+    </div>
+    <div class="section">
+      <h3>视频 (<span id="video-count">0</span>):</h3>
+      <button id="download-all-videos" class="download-all">下载所有视频</button>
+      <div id="videos"></div>
+    </div>
+    <div class="section">
+      <h3>文字内容:</h3>
+      <div id="text-content">
+        <div id="title-content"></div>
+        <div id="main-content"></div>
+        <div id="other-content"></div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
